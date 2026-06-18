@@ -1,53 +1,215 @@
-# Customer Churn Analysis — Tableau Dashboard
+# Telecom Customer Churn Analysis Dashboard
 
-Interactive Tableau dashboards that visualize customer churn trends, segment high-risk customers, and surface actionable retention strategies for business stakeholders.
+## Project Overview
 
+This Tableau project analyzes customer churn behavior in a telecom company and identifies the key factors influencing customer attrition.
 
-# Problem Statement
-Customer churn is one of the most expensive problems a business faces — acquiring a new customer costs 5–7× more than retaining an existing one. This project transforms raw churn data into an interactive visual story that enables business teams to identify who is churning, why, and where to intervene.
-Business Question: Which customer segments are at highest risk of churning, and what patterns predict departure?
+The dashboard provides insights into customer demographics, contract types, payment methods, tenure, monthly charges, internet services, and churn trends to support customer retention strategies.
 
-# Dataset
-PropertyDetailDomainTelecom / Subscription BusinessKey FieldsCustomer ID, Tenure, Contract Type, Monthly Charges, Churn LabelAnalysis LevelCustomer-level with cohort segmentation
+---
 
-# Dashboard Pages
-Page 1 — Executive Churn Overview
+## Business Problem
 
-Overall Churn Rate KPI — headline metric at a glance
-Churn by Contract Type — month-to-month vs. 1-year vs. 2-year
-Churn by Tenure Cohort — when do customers leave?
-Monthly Revenue Lost to Churn
+Customer churn directly impacts revenue and business growth. Understanding why customers leave helps organizations design targeted retention programs and improve customer satisfaction.
 
-Page 2 — High-Risk Segment Analysis
+This project aims to answer:
 
-Churn Rate by Internet Service Type
-Payment Method vs. Churn — electronic check customers churn most
-Monthly Charges Distribution — churners vs. retained customers
-Top 10% Highest-Risk Customer Profiles
+- What is the overall churn rate?
+- Which customer groups are most likely to churn?
+- How does tenure affect churn?
+- Which payment methods are associated with higher churn?
+- How do monthly charges influence churn?
+- Which internet services have the highest churn risk?
 
-Page 3 — Retention Opportunity Map
+---
 
-Churn probability heatmap by segment
-Revenue at risk by customer cohort
-Recommended intervention segments — where retention spend has highest ROI
+## Tools Used
 
+- Tableau Desktop
+- Data Visualization
+- Calculated Fields
+- Storytelling Dashboard
+- Interactive Charts
+- Business Analytics
 
-# Key Insights
-FindingBusiness ImplicationMonth-to-month contracts churn 3× more than 2-year contractsIncentivize annual contract upgradesCustomers with tenure < 12 months are highest riskTarget onboarding-phase retention programsElectronic check payers churn mostNudge toward auto-pay enrollmentHigh monthly charges + no tech support → high churnBundle tech support for premium-tier customers
+---
 
-# Tools Used
-Tableau Desktop Calculated Fields LOD Expressions Dashboard Actions Filters & Parameters
+## Dataset
 
+The dataset contains telecom customer information including:
 
-# How to View
+- Customer Demographics
+- Gender
+- Tenure
+- Contract Type
+- Monthly Charges
+- Total Charges
+- Payment Method
+- Internet Service
+- Phone Service
+- Churn Status
 
-Download customer_churn_dashboard.twbx from the dashboard/ folder
-Open in Tableau Desktop or Tableau Public
-Use the filters on each page to explore by segment, region, or contract type
+---
 
+## Dashboard Pages
 
-# Business Impact
+### 1. Churn Overview
 
-Enables non-technical stakeholders to self-serve churn insights without SQL
-Identifies the 3 highest-ROI customer segments for retention investment
-Reduces time-to-insight from days (manual analysis) to seconds (dashboard)
+Provides a high-level view of customer churn.
+
+**Key Findings:**
+- Total Customers: 7,043
+- Churned Customers: 1,869
+- Overall Churn Rate: 26.54%
+
+---
+
+### 2. Churn by Tenure Group
+
+Analyzes churn across customer tenure segments.
+
+**Insight:**
+- Customers with 0–12 months tenure have the highest churn volume.
+- Long-term customers show lower churn behavior.
+
+---
+
+### 3. Churn by Payment Method
+
+Examines customer churn based on payment methods.
+
+**Insight:**
+- Electronic Check users show higher churn compared to other payment methods.
+- Automatic payment methods are associated with lower churn.
+
+---
+
+### 4. Monthly Bill Range Analysis
+
+Analyzes churn distribution across monthly charge ranges.
+
+**Insight:**
+- Most churned customers fall within the ₹41–80 and ₹81–110 monthly bill ranges.
+
+---
+
+### 5. Internet Service Analysis
+
+Compares average monthly charges across internet service categories.
+
+**Insight:**
+- Fiber Optic customers have the highest average monthly charges and higher churn risk.
+
+---
+
+### 6. Contract Analysis
+
+Compares customer charges by contract type.
+
+**Insight:**
+- Month-to-month customers exhibit higher churn.
+- Longer contracts show better customer retention.
+
+---
+
+### 7. Churn Drivers Dashboard
+
+Combines multiple visualizations to identify the strongest churn drivers.
+
+Key factors include:
+- Short customer tenure
+- High monthly charges
+- Month-to-month contracts
+- Electronic check payments
+- Fiber optic internet service
+
+---
+
+## Key Business Insights
+
+### Customer Retention
+
+- Churn rate is approximately 26.5%.
+- New customers are more likely to leave.
+
+### Contract Impact
+
+- Longer contracts significantly reduce churn.
+
+### Payment Behavior
+
+- Customers using automatic payment methods are more loyal.
+
+### Pricing Impact
+
+- Higher monthly charges correlate with increased churn risk.
+
+### Service Impact
+
+- Fiber optic customers contribute a significant portion of churn.
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning
+- Data Analysis
+- Business Intelligence
+- Tableau Dashboard Development
+- Data Storytelling
+- Customer Segmentation
+- KPI Analysis
+- Churn Analytics
+- Insight Generation
+
+---
+
+## Project Screenshots
+
+### Churn Overview
+
+![Churn Overview](Screenshots/chrun_overview.png)
+
+### Churn by Tenure Group
+
+![Churn by Tenure Group](Screenshots/chrun_by_tenure_group.png)
+
+### Churn by Payment Method
+
+![Churn by Payment Method](Screenshots/chrun_by_payment_method.png)
+
+### Monthly Bill Range Analysis
+
+![Monthly Bill Range](Screenshots/monthly_bill_range_chrun_customer.png)
+
+### Churn Drivers
+
+![Churn Drivers](Screenshots/chrun_drivers.png)
+
+### Tableau Story
+
+![Story Dashboard](Screenshots/chrun_story.png)
+
+---
+
+## Business Value
+
+This dashboard helps telecom companies:
+
+- Identify customers at risk of churn
+- Improve customer retention strategies
+- Optimize contract offerings
+- Design targeted marketing campaigns
+- Reduce revenue loss due to customer attrition
+
+---
+
+## Author
+
+**Ramya R**
+
+Data Analyst | Python | SQL | Tableau | Power BI | Machine Learning
+
+GitHub: https://github.com/ramya-ravikumar-r
+
+LinkedIn: https://www.linkedin.com/in/ramya-r1811/
